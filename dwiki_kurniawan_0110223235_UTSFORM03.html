@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Daftar Alumni</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        fieldset {
+            width: 370px;
+        }
+
+        label, input, textarea, select {
+            display: inline-block;
+            margin-bottom: 5px;
+            vertical-align: top;
+        }
+
+        label {
+            width: 120px;
+        }
+        
+        .search {
+            border-radius: 10px;
+        }
+
+        #tahun_masuk, #tahun_lulus {
+            width: 50px;
+        }
+
+        #alamat_kantor {
+            margin-bottom: 20px;
+        }
+
+        #pengurus_alumni {
+            margin-bottom: 25px;
+        }
+
+        #ya, #tidak {
+            margin-right: 8px;
+        }
+
+        #simpan {
+            margin-left: 25%;
+            box-shadow: 2px 2px 2px 2px;
+        }
+
+        #reset {
+            margin-left: 20px;
+            box-shadow: 2px 2px 2px 2px;
+        }
+      
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Daftarkan Alumni</legend>
+        
+        <label for="cari">Cari Nama Alumni</label>
+        <input class="search" type="search" placeholder="search"> <i class="fa fa-search"></i>          
+        
+
+        <label for="prodi">Program Studi:</label>
+        <select name="prodi" id="prodi">
+            <option value="sistem_informasi">Sitem Informasi</option>
+            <option value="teknik_informatika">Teknik Informatika</option>
+            <option value="bisnis_digital">Bisnis Digital</option>
+        </select><br>
+
+        <label for="tahun_masuk">Tahun Masuk:</label>
+        <input type="text" name="tahun_masuk" id="tahun_masuk"><br>
+
+        <label for="tahun_lulus">Tahun Lulus:</label>
+        <input type="text" name="tahun_lulus" id="tahun_lulus"><br>
+
+        <label for="alamat_linkedin">Alamat LinkedIn:</label>
+        <input type="text" name="alamat_linkedin" id="alamat_linkedin"><br>
+
+        <label for="pekerjaan">Pekerjaan:</label>
+        <input type="text" name="pekerjaan" id="pekerjaan"><br>
+
+        <label for="alamat_kantor">Alamat Kantor</label>
+        <textarea name="alamat_kantor" id="alamat_kantor" rows="3" cols="21"></textarea><br>
+
+        <label for="pengurus_alumni" id="pengurus_alumni">Pengurus Alumni</label>
+        <input type="radio" name="ya" id="ya">Ya
+        <input type="radio" name="tidak" id="tidak">Tidak
+        <br>
+
+        <input type="submit" value="Simpan" name="simpan" id="simpan">
+        <input type="reset" value="Reset" name="reset" id="reset">
+    </fieldset>
+</body>
+</html>
